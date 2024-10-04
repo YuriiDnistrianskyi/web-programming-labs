@@ -1,0 +1,66 @@
+.container.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button-nav-menu {
+    display: none;
+    position: fixed;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    background-image: "image/hamburger_menu.png";
+}
+
+.menu-img {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    left: -120px
+}
+
+.button-nav-menu > img {
+    max-width: 100px;
+}
+
+.header__menu ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.header__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 240px;
+    height: 45px;
+}
+
+.header__nav-item {
+    margin-right: 40px;
+    transition: color 0.3s linear;
+}
+
+.header__button {
+    width: 150px;
+    height: 45px;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 50px;
+    background: #FFFFFF;
+    transition: background-color 0.3s linear;
+}
+
+.header__button.singin {
+    border: #ffffff;
+    color: rgba(31, 21, 52, 1);
+}
+
+.header__button.singup {
+    border: 1px solid #F53855;
+    color: #F53855;
+}
+
