@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="code css/lab3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <section class="container">
+        <header class="container__header">
+            <nav class="container__header-menu">
+                <h2>Stadiums</h2>
+                <nav class="header__nav-menu">
+                    <p class="menu-item">Home</p>
+                    <p class="menu-item">Add stadium</p>
+                    <p class="menu-item open">Edit stadium</p>
+                </nav>
+            </nav>
+            <div class="container__header-add">
+                <input id="search-name" class="header-input">
+                <div class="header-buttons">
+                    <button class="header-button search" onclick="searchStadium()">Search</button>
+                    <button class="header-button clear" onclick="clearSearch()">Clear</button>
+                </div>
+            </div>
+        </header>
+    </section>
+    <section class="container__create-page">
+        <div class="create-box">
+            <h1 class="create-page-text">Create Stadium</h1>
+            <div class="create-panel">
+                <p class="create-text-item">Name</p>
+                <input type="text" id="name" class="create-input-item">
+                <p class="create-text-item">Number of audience</p>
+                <input type ="text" id="numberOfAudience" class="create-input-item">
+                <p class="create-text-item">Lighting power (in suites)</p>
+                <input type="text" id="lightingPower" class="create-input-item">
+            </div>
+            <div class="main-create-buttons">
+                <button class="main-button" onclick="editElement()">Edit</button>
+                <button class="main-button" onclick="clearInput()">Clear</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
