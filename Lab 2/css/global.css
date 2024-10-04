@@ -1,0 +1,120 @@
+body {
+    font-family: 'Rubik';
+    margin: 0;
+    padding: 0;
+}
+
+.logo-img {
+    display: flex;
+    width: 149px;
+    height: 37px;
+    background-image: url("../image/Logo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    display: block;
+}
+
+.button {
+    width: 250px;
+    height: 85.29px;
+}
+
+.button-text {
+    width: 250px;
+    height: 60px;
+    position: relative;
+    z-index: 2;
+    border-radius: 10px;
+    background: #F53838;
+    border:  #F53838;
+
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s linear;
+}
+
+.button-text:hover {
+    background:#ffffff;
+    border: 1px solid #F53838;
+    color:#F53838;
+}
+
+.button-text:active {
+    transform: scale(0.9);
+    background: #999999;
+}
+
+@keyframes buttom {
+    0% {transform: scale(0.5);}
+    50% {transform: scale(6);}
+    100% {transform: scale(0.5);}
+}
+
+.button-buttom {
+    margin: 0 auto;
+    margin-top: -20px;
+    position: relative;
+    z-index: 1;
+    transition: 2s;
+    animation: button 8s linear infinite;
+
+    width: 211.83px;
+    height: 60px;
+
+    background: rgba(245, 56, 56, 0.35);
+
+    filter: blur(27px);
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 320px) {
+    body {
+        text-align: center;
+    }
+
+    .button {
+        width: 180px;
+    }
+    
+    .button-text {
+        width: 180px;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .container {
+        height: 800px;
+    }
+
+    .logo-img {
+        width: 298px;
+        height: 70px;
+    }
+
+    .button-text {
+        width: 500px;
+        height: 120px;
+        border-radius: 25px;
+        font-size: 32px;
+    }
+
+    .button{
+        width: 500px;
+        height: 120px;
+    }
+}
+

@@ -1,0 +1,296 @@
+.container.coments {
+    margin-top: 20px;
+    width: 1139px;
+    height: 529.06px;
+}
+
+.coments__h-trusted{
+    width: 392.35px;
+    height: 100px; 
+    margin: 0 auto;
+    
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 50px;
+    text-align: center;
+    
+    color: #0B132A;
+}
+    
+.coments__h-these {
+    margin: 0 auto;
+    width: 486.27px;
+    height: 60px;
+    
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    
+    color: #4F5665;
+}
+
+.coment__boxs {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: space-between;
+    width: 1131px;
+    height: 300px;
+}
+
+.coment__box{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+    box-sizing: border-box;
+    width: 350.46px;
+    height: 230px;
+
+    background: #FFFFFF;
+    border: 2px solid #DDDDDD;
+    border-radius: 10px;
+}
+
+.coment__box.red {
+    border: 2px solid #F53838;
+}
+
+.coment__top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 70px;
+}
+
+.coment__head{
+    margin: 0 auto;
+    display: flex;
+    width: 200px;
+    height: 50px;
+}
+
+.coment__photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#aaa {
+    background-image: url("../image/coment_person_1.png");
+}
+
+#aab {
+    background-image: url("../image/coment_person_2.png"); 
+}
+#aac {
+    background-image: url("../image/coment_person_3.png"); 
+}
+
+.coment__data {
+    width: 130px;
+    height: 40px;
+    margin-top: 5px;
+    margin-left: 14px;
+}
+
+.coment__name {
+    margin: 0 auto;
+    margin-top: -4px;
+    font-weight: bold;
+    text-align: left;
+    font-size: 18px;
+    line-height: 30px;
+    color: #0B132A;
+}
+
+.coment__location {
+    margin: 0 auto;
+    margin-top: -6px;
+    
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+
+    color: #4F5665;
+}
+
+.coment__rating {
+    display: flex;
+    width: 59.72px;
+    height: 25.48px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.rating__data {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+
+    color: #0B132A;
+}
+
+@keyframes star {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(180deg);}
+    100% {transform: rotate(0deg);}
+}
+
+.rating__star {
+    margin-left: 10px;
+    width: 24.87px;
+    height: 25.48px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.9007 8.78733L16.7345 7.86902L13.978 2.14269C13.9027 1.98591 13.7788 1.85899 13.6258 1.78184C13.2421 1.58773 12.7758 1.74949 12.584 2.14269L9.82749 7.86902L3.66125 8.78733C3.49125 8.81221 3.33582 8.89434 3.21682 9.01877C3.07295 9.17029 2.99367 9.37415 2.99641 9.58553C2.99914 9.79692 3.08366 9.99855 3.23139 10.1461L7.69274 14.6032L6.63873 20.897C6.61401 21.0434 6.62982 21.194 6.68436 21.3316C6.73891 21.4693 6.83001 21.5886 6.94733 21.6759C7.06465 21.7632 7.20349 21.8151 7.34812 21.8256C7.49275 21.8362 7.63738 21.805 7.7656 21.7357L13.281 18.7642L18.7963 21.7357C18.9469 21.8178 19.1218 21.8452 19.2893 21.8153C19.7119 21.7406 19.9961 21.33 19.9232 20.897L18.8692 14.6032L23.3306 10.1461C23.452 10.0242 23.5321 9.8649 23.5564 9.6907C23.622 9.25519 23.3257 8.85203 22.9007 8.78733Z" fill="%23FEA250"/></svg>');
+    animation: star 8s linear infinite;
+}
+
+.coment__text {
+    margin: auto;
+    display: flex;
+    width: 297.89px;
+    height: 120px;
+    
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    align-items: center;
+    
+    color: #0B132A;
+}
+
+@media screen and (max-width: 320px) {
+    .container.coments {
+        width: 250px;
+    }
+
+    .coments__h-trusted {
+        width: 250px;
+        height: 200px;
+    }
+
+    .coments__h-these {
+        margin-top: 20px;
+        width: 250px;
+    }
+
+    .coment__boxs {
+        margin-top: 20px;
+        margin-left: -25px;
+        flex-direction: column;
+        width: 300px;
+        height: 700px;
+    }
+
+    .coment__box {
+        margin-top: 20px;
+        width: 300px;
+        height: 230px;
+    }
+
+    .coment__rating {
+        margin-left: 15px;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .container.coments {
+        margin-top: 100px;
+        width: 2000px;
+        height: 850px;
+    }
+
+    .coments__h {
+        height: 350px;
+    }
+
+    .coments__h-trusted {
+        height: 200px;
+        width: 1200px;
+        font-size: 100px;
+        line-height: 100px;
+    }
+
+    .coments__h-these {
+        width: 1000px;
+        height: 120px;
+        font-size: 32px;
+        line-height: 60px;
+    }
+
+    .coment__boxs {
+        width: 2000px;
+        height: 500px;
+    }
+
+    .coment__box {
+        width: 600px;
+        height: 500px;
+    }
+
+    .coment__top{
+        display: flex;
+        flex-direction: row;
+        height: 200px;
+    }
+
+    .coment__head{
+        width: 450px;
+        height: 150px;
+    }
+
+    .coment__photo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .coment__data {
+        width: 280px;
+        height: 40px;
+    }
+
+    .coment__name {
+        margin-top: 20px;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 60px;
+    }
+
+    .coment__location {
+        margin-top: 5px;
+        font-size: 28px;
+    }
+
+    .coment__rating {
+        width: 100px;
+        height: 150px;
+    }
+
+    .rating__data {
+        font-size: 32px;
+    }
+
+    .rating__star {
+        margin-left: 0;
+        width: 150px;
+        height: 45px;
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.9007 8.78733L16.7345 7.86902L13.978 2.14269C13.9027 1.98591 13.7788 1.85899 13.6258 1.78184C13.2421 1.58773 12.7758 1.74949 12.584 2.14269L9.82749 7.86902L3.66125 8.78733C3.49125 8.81221 3.33582 8.89434 3.21682 9.01877C3.07295 9.17029 2.99367 9.37415 2.99641 9.58553C2.99914 9.79692 3.08366 9.99855 3.23139 10.1461L7.69274 14.6032L6.63873 20.897C6.61401 21.0434 6.62982 21.194 6.68436 21.3316C6.73891 21.4693 6.83001 21.5886 6.94733 21.6759C7.06465 21.7632 7.20349 21.8151 7.34812 21.8256C7.49275 21.8362 7.63738 21.805 7.7656 21.7357L13.281 18.7642L18.7963 21.7357C18.9469 21.8178 19.1218 21.8452 19.2893 21.8153C19.7119 21.7406 19.9961 21.33 19.9232 20.897L18.8692 14.6032L23.3306 10.1461C23.452 10.0242 23.5321 9.8649 23.5564 9.6907C23.622 9.25519 23.3257 8.85203 22.9007 8.78733Z" fill="%23FEA250"/></svg>');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        animation: star 8s linear infinite;
+    }
+
+    .coment__text {
+        width: 550px;
+        height: 240px;
+        font-size: 32px;
+        line-height: 60px;
+    }
+}

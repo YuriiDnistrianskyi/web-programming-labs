@@ -1,0 +1,155 @@
+.container.form {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    top: 70px;
+    z-index: 2;
+
+    width: 78%;
+    height: 233px;
+
+    border-radius: 10px;
+    background: #ffffff;
+}
+
+.form {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    height: 90%;
+}
+
+.form__text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 116px;
+}
+
+.form__text-subscribe {
+    width: 371.61px;
+    height: 80px;
+
+    font-size: 35px;
+    font-weight: bodl;
+    line-height: 45px;
+    text-align: left;
+
+    color: #0B132A;
+    
+}
+
+.form__text-let {
+    margin-top: -20px;
+    width: 410px;
+    height: 16px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+
+    color: #4F5665
+}
+
+#button1 {
+    width: 28%;
+}
+
+@media screen and (max-width: 320px) {
+    .container.form {
+        flex-direction: column;
+        margin-top: 500px;
+        height: 450px;
+    }
+
+    .form__text {
+        margin: 0 auto;
+        width: 200px;
+    }
+
+    .form__text-let {
+        margin-top: 5px;
+        width: 200px;
+        height: 70px;
+    }
+
+    .form__text-subscribe {
+        width: 200px;
+        height: 300px;
+    
+        font-size: 35px;
+        font-weight: bodl;
+        line-height: 45px;
+        text-align: center;
+    
+        color: #0B132A;
+    }
+
+    .form {
+        flex-direction: column;
+        height: 400px;
+    }
+
+    #button1 {
+        width: 200px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 2560px) {
+    .container.form{
+        height: 500px;
+    }
+
+    .form__text {
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+    }
+
+    .form__text-subscribe {
+        width: 700px;
+        height: 200px;
+
+        font-size: 70px;
+        line-height: 90px;
+    }
+
+    .form__text-let {
+        margin-top: -20px;
+        width: 700px;
+        height: 30px;
+        font-size: 32px;
+    }
+}

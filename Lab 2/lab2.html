@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lab2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <title>laslesVPN</title>
+</head>
+
+<body>
+    <header class="container header">
+        <div class="logo-img"></div>
+        <div class="button-nav-menu" onclick="toggleMenu()">
+            <img class="menu-img" src="image/hamburger_menu.png">
+        </div>
+        <nav id="nav-links" class="header__menu">
+            <ul>
+                <li><a class="header__nav-item">About</a></li>
+                <li><a class="header__nav-item">Features</a></li>
+                <li><a class="header__nav-item">Pricing</a></li>
+                <li><a class="header__nav-item">Testimonials</a></li>
+                <li><a class="header__nav-item">Help</a></li>
+            </ul>
+        </nav>
+        <div class="header__buttons open">
+            <button class="header__button singin">Sing In</button>
+            <button class="header__button singup">Sing Up</button>
+        </div>
+    </header>
+
+    <section class="container hero">
+        <div class="hero__text">
+            <h1 class="hero__text-want">Want anything to be easy with <spam class="hero__text-vpn">LaslesVPN</spam>
+            </h1>
+            <p class="hero__text-provide">Provide a network for all your needs with ease and fun using <spam
+                    class="hero__text-vpn">LaslesVPN</spam> discover
+                interesting features from us.</p>
+            <div class="button">
+                <button class="button-text">Get Started</button>
+                <div class="button-buttom"></div>
+            </div>
+        </div>
+        <div class="hero__img"></div>
+    </section>
+
+    <section class="container features">
+        <div class="features__box">
+            <div class="features__img"></div>
+            <div class="features__text">
+                <h1 class="text__we">We Provide Many Features You Can Use</h1>
+                <p class="text__you">You can explore the features that we provide with fun and have their own functions each
+                    feature.</p>
+                <div class="features__options">
+                    <div class="list__circle"></div>
+                        <ul>
+                            <li class="circle"></li>
+                            <li class="circle"></li>
+                            <li class="circle"></li>
+                            <li class="circle"></li>
+                        </ul>
+                    </div>
+                    <div class="list__features">
+                        <ul>
+                            <li class="features__text-item">Powerfull online protection.</li>
+                            <li class="features__text-item">Internet withour borders.</li>
+                            <li class="features__text-item">Supercharged VPN</li>
+                            <li class="features__text-item">No specific time limits.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container coments">
+        <div class="coments__h">
+            <h1 class="coments__h-trusted">Trusted by Thousands of Happy Customer</h1>
+            <p class="coments__h-these">These are the stories of our customers who have joined us with great pleasure
+                when using
+                this crazy feature.</p><br><br>
+        </div>
+        
+        <div class="coment__boxs">
+            <div class="coment__box red">
+                <div class="coment__top">
+                    <div class="coment__head">
+                        <div class="coment__photo" id="aaa"></div>
+                        <div class="coment__data">
+                            <h3 class="coment__name">Viezh Robert</h3>
+                            <p class="coment__location">Warsaw, Poland</p>
+                        </div>
+                    </div>
+                    <div class="coment__rating">
+                        <div class="rating__data">4.5</div>
+                        <div class="rating__star"></div>
+                    </div>
+                </div>
+                <div class="coment__text">“Wow... I am very happy to use this VPN, it turned out to be more than my
+                    expectations and so far there have been no problems.</div>
+            </div>
+            <div class="coment__box">
+                <div class="coment__top">
+                    <div class="coment__head">
+                        <div class="coment__photo" id="aab"></div>
+                        <div class="coment__data">
+                            <h3 class="coment__name">Yessica Christy</h3>
+                            <p class="coment__location">Warsaw, Poland</p>
+                        </div>
+                    </div>
+                    <div class="coment__rating">
+                        <div class="rating__data">4.5</div>
+                        <div class="rating__star"></div>
+                    </div>
+                </div>
+                <div class="coment__text">“I like it because I like to travel far and still can connect with high
+                    speed.”.</div>
+            </div>
+            <div class="coment__box">
+                <div class="coment__top">
+                    <div class="coment__head">
+                        <div class="coment__photo" id="aac"></div>
+                        <div class="coment__data">
+                            <h3 class="coment__name">Kim Young Jou</h3>
+                            <p class="coment__location">Warsaw, Poland</p>
+                        </div>
+                    </div>
+                    <div class="coment__rating">
+                        <div class="rating__data">4.5</div>
+                        <div class="rating__star"></div>
+                    </div>
+                </div>
+                <div class="coment__text">“This is very unusual for my business that currently requires a virtual
+                    private network that has high security.”.</div>
+            </div>
+        </div>
+    </section>
+    <form class="container form">
+        <div class="form">
+            <div class="form__text">
+                <h1 class="form__text-subscribe">Subscribe Now for Get Special Features!</h1>
+                <p class="form__text-let">Let's subscribe with us and find the fun.</p>
+            </div>
+            <div class="button" id="button1">
+                <button class="button-text">Subscribe Now</button>
+                <div class="button-buttom"></div>
+            </div>
+        </div>
+    </form>
+    <section class="container footer">
+        <footer class="footer">
+            <p class="footer__box-text">©2020LaslesVPN</p>
+            <ul class="footer__box-list">
+                <li class="ellipse facebook">
+                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M17 0C7.61104 0 0 7.61104 0 17C0 26.389 7.61104 34 17 34C26.389 34 34 26.389 34 17C34 7.61104 26.389 0 17 0ZM21.0269 11.7477H18.4716C18.1688 11.7477 17.8323 12.1461 17.8323 12.6756V14.5208H21.0286L20.5452 17.1523H17.8323V25.052H14.8166V17.1523H12.0806V14.5208H14.8166V12.9731C14.8166 10.7525 16.3572 8.94802 18.4716 8.94802H21.0269V11.7477Z"
+                            fill="white" />
+                    </svg>
+                </li>
+                <li class="ellipse twiter">
+                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M17 0C7.61104 0 0 7.61104 0 17C0 26.389 7.61104 34 17 34C26.389 34 34 26.389 34 17C34 7.61104 26.389 0 17 0ZM23.9151 13.9258C23.9222 14.071 23.924 14.2163 23.924 14.3579C23.924 18.785 20.5576 23.8868 14.3986 23.8868C12.5787 23.8898 10.7967 23.3671 9.26677 22.3816C9.52708 22.4134 9.79448 22.4258 10.0654 22.4258C11.6344 22.4258 13.0776 21.8928 14.2233 20.9932C13.5251 20.9795 12.8486 20.7483 12.288 20.3319C11.7274 19.9154 11.3108 19.3344 11.096 18.6699C11.5975 18.7652 12.114 18.7453 12.6066 18.6115C11.8487 18.4582 11.1672 18.0476 10.6776 17.4492C10.188 16.8508 9.9204 16.1015 9.92021 15.3283V15.2876C10.3718 15.5373 10.8889 15.6896 11.4378 15.7073C10.7274 15.2344 10.2244 14.5079 10.0318 13.6764C9.83929 12.8449 9.97165 11.9713 10.4019 11.2342C11.2429 12.2683 12.2918 13.1143 13.4806 13.7174C14.6694 14.3205 15.9715 14.6672 17.3028 14.7351C17.1336 14.0167 17.2064 13.2625 17.51 12.5897C17.8136 11.917 18.331 11.3634 18.9817 11.0151C19.6324 10.6667 20.3799 10.5431 21.1081 10.6634C21.8363 10.7837 22.5044 11.1412 23.0084 11.6804C23.7578 11.5322 24.4764 11.2573 25.1334 10.8676C24.8837 11.6435 24.3608 12.3023 23.6619 12.7217C24.3257 12.6417 24.9738 12.4633 25.585 12.1922C25.1361 12.8649 24.5706 13.452 23.9151 13.9258Z"
+                            fill="white" />
+                    </svg>
+                </li>
+                <li class="ellipse instagram">
+                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M22.3125 17C22.3125 18.409 21.7528 19.7602 20.7565 20.7565C19.7602 21.7528 18.409 22.3125 17 22.3125C15.591 22.3125 14.2398 21.7528 13.2435 20.7565C12.2472 19.7602 11.6875 18.409 11.6875 17C11.6875 16.6972 11.7194 16.4015 11.7743 16.1146H9.91667V23.1926C9.91667 23.6849 10.3151 24.0833 10.8074 24.0833H23.1944C23.4303 24.0829 23.6564 23.9888 23.8231 23.8218C23.9897 23.6548 24.0833 23.4285 24.0833 23.1926V16.1146H22.2257C22.2806 16.4015 22.3125 16.6972 22.3125 17ZM17 20.5417C17.4652 20.5415 17.9258 20.4498 18.3556 20.2717C18.7854 20.0935 19.1758 19.8325 19.5047 19.5035C19.8336 19.1744 20.0944 18.7838 20.2723 18.354C20.4503 17.9241 20.5418 17.4634 20.5417 16.9982C20.5415 16.533 20.4498 16.0724 20.2717 15.6426C20.0935 15.2129 19.8325 14.8224 19.5035 14.4935C19.1744 14.1647 18.7838 13.9038 18.354 13.7259C17.9241 13.548 17.4634 13.4564 16.9982 13.4566C16.0587 13.4568 15.1577 13.8303 14.4935 14.4948C13.8293 15.1593 13.4563 16.0605 13.4566 17C13.4568 17.9395 13.8303 18.8405 14.4948 19.5047C15.1593 20.1689 16.0605 20.5419 17 20.5417ZM21.25 13.2812H23.3732C23.5143 13.2812 23.6496 13.2253 23.7495 13.1258C23.8494 13.0262 23.9058 12.8911 23.9062 12.75V10.6268C23.9062 10.4854 23.8501 10.3498 23.7501 10.2499C23.6502 10.1499 23.5146 10.0937 23.3732 10.0937H21.25C21.1086 10.0937 20.9731 10.1499 20.8731 10.2499C20.7731 10.3498 20.717 10.4854 20.717 10.6268V12.75C20.7188 13.0422 20.9578 13.2812 21.25 13.2812ZM17 0C12.4913 0 8.1673 1.79107 4.97918 4.97918C1.79107 8.1673 0 12.4913 0 17C0 21.5087 1.79107 25.8327 4.97918 29.0208C8.1673 32.2089 12.4913 34 17 34C19.2325 34 21.4431 33.5603 23.5056 32.706C25.5682 31.8516 27.4422 30.5994 29.0208 29.0208C30.5994 27.4422 31.8516 25.5682 32.706 23.5056C33.5603 21.4431 34 19.2325 34 17C34 14.7675 33.5603 12.5569 32.706 10.4944C31.8516 8.43185 30.5994 6.55778 29.0208 4.97918C27.4422 3.40059 25.5682 2.14838 23.5056 1.29405C21.4431 0.439718 19.2325 0 17 0ZM25.8542 23.8868C25.8542 24.9688 24.9688 25.8542 23.8868 25.8542H10.1132C9.03125 25.8542 8.14583 24.9688 8.14583 23.8868V10.1132C8.14583 9.03125 9.03125 8.14583 10.1132 8.14583H23.8868C24.9688 8.14583 25.8542 9.03125 25.8542 10.1132V23.8868Z"
+                            fill="white" />
+                    </svg>
+                </li>
+            </ul>
+            <div class="logo-img"></div>
+        </footer>        
+    </section>
+
+    <script src="lab2.js"></script>
+
+</body>
+
+</html>
