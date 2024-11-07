@@ -7,6 +7,7 @@ function CatalogList({list}) {
         <div className="container__list">
             {list.map(item => (
                 <CatalogItem 
+                    id={item.id}
                     name={item.name}
                     audience={item.audience}
                     lightingPower={item.lightingPower}
