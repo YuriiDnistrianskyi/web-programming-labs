@@ -6,7 +6,7 @@ function ItemPage(item) {
         <section className="container">
             <div className="item__top">
                 <div className="item__top-img">
-                    <image src={item.srcImg} />
+                    <img className="item__top-img-2" />
                 </div>
                 <div className="item__top-content">
                     <div className="item-content">
@@ -14,7 +14,10 @@ function ItemPage(item) {
                             <div>Option 1</div>
                             <div>Option 2</div>
                         </div>
-                        <h1>{item.name} Name</h1>
+                        <h1 className="content-name">{item.name} Name</h1>
+                        <div>
+
+                        </div>
                     </div>
                 </div>
             </div>

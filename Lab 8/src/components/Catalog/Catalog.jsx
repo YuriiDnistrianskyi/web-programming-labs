@@ -1,8 +1,8 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route, NavLink } from "react-router-dom";
 import "./catalogStyle.css";
 import SelectFilter from "../../items/SelectFilter/SelectFilter";
 import CatalogList from "../../items/CatalogList/CatalogList";
-//import items from ""
 
 let items = [
     {id: "1", name: "Arena Lviv", audience: "15000", lightingPower: "2000", srcImg: "https://i0.wp.com/photo-lviv.in.ua/wp-content/uploads/2019/02/arena.jpg?fit=1280%2C849&ssl=1"},
