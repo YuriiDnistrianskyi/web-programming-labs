@@ -10,7 +10,6 @@
 .item__top-img {
     width: 40%;
     height: 100%;
-    background-color: aqua;
 }
 
 .item__top-img-2 {
@@ -29,7 +28,7 @@
     margin-top: 40px;
     width: 80%;
     height: 80%;
-    background-color: aquamarine;
+    background-color: rgb(255, 255, 255);
 }
 
 .content-header {
@@ -54,5 +53,78 @@
     width: 40%;
     height: 10%;
     text-align: center;
-    background-color: blueviolet;
 }
+
+.content-info {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 80%;
+    height: 60%;
+}
+
+.info {
+    margin: 0 auto;
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.item__bottom {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 80%;
+    height: 10%;
+    background-color: #ffffff;
+}
+
+.item__bottom-price {
+    width: 25%;
+    height: 100%;
+    text-align: center;
+
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.item__bottom-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 12px;
+    width: 40%;
+    height: 100%;
+}
+
+.button-item-page {
+    width: 45%;
+    height: 80%;
+    border-width: 0;
+    border-radius: 30px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    transition: linear 0.3s;
+}
+
+.go-back {
+    border-width: 1px;
+    background-color: #ffffff;
+}
+
+.add-to {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.button-item-page:hover {
+    transform: scale(1.1);
+}
+
+.button-item-page:active {
+    transform: scale(0.9);
+}
+
