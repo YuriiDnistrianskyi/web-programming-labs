@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import CatalogItem from "../CatalogItem/CatalogItem";
-import "./cataloglistStyle.css"
+import "./cataloglistStyle.css";
+import { myContext } from "../Context/Context";
 
-function CatalogList({list}) {
+function CatalogList() {
+    const { items } = useContext(myContext)
+
     return (
         <div className="container__list">
-            {list.map(item => (
+            {items.map(item => (
                 <CatalogItem 
                     id={item.id}
                     name={item.name}
@@ -15,7 +18,7 @@ function CatalogList({list}) {
                 ></CatalogItem>
             ))}
         </div>
-    )
+    );
 }
 
 export default CatalogList;

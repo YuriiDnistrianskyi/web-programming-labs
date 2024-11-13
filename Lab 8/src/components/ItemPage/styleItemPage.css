@@ -28,7 +28,6 @@
     margin-top: 40px;
     width: 80%;
     height: 80%;
-    background-color: rgb(255, 255, 255);
 }
 
 .content-header {
@@ -59,18 +58,28 @@
     margin: 0 auto;
     margin-top: 20px;
     width: 80%;
-    height: 60%;
+    height: 35%;
 }
 
 .info {
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 30px;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 20px;
+}
+
+.content-filters {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 80%;
+    height: 15%;
 }
 
 .item__bottom {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     margin: 0 auto;
     margin-top: 50px;

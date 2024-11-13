@@ -6,6 +6,8 @@ import Cart from "../Cart/Cart";
 import ItemPage from "../ItemPage/ItemPage";
 import "./navigationStyle.css"
 
+const item1 = {id: "1", name: "Arena Lviv", audience: "15000", lightingPower: "2000", srcImg: "https://i0.wp.com/photo-lviv.in.ua/wp-content/uploads/2019/02/arena.jpg?fit=1280%2C849&ssl=1"};
+
 function Navigation(){
     return (
         <Router>
@@ -28,7 +30,7 @@ function Navigation(){
                 <Route path="/" element={<Home />} />
                 <Route path="/catalog" element={<Catalog />} />
                 <Route path="/card" element={<Cart />} />
-                <Route path="/item" element={<ItemPage />} />
+                <Route path="/catalog/item/:id" element={<ItemPage item={item1}></ItemPage>} />
             </Routes>
         </Router>
     );

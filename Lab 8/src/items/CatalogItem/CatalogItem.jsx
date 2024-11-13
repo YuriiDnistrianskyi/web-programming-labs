@@ -1,8 +1,12 @@
 import React from "react";
-import { NavLink} from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./catalogitemStyle.css"
 
+const a = ``
+
 const CatalogItem = ({id, name, audience, lightingPower, srcImg="https://i0.wp.com/photo-lviv.in.ua/wp-content/uploads/2019/02/arena.jpg?fit=1280%2C849&ssl=1"}) => {
+    const url = `item/${id}`;
+
     return (
         <div className="catalogitem">
             <h2 className="catalogitem-header">Stadium {id}</h2>
@@ -14,7 +18,7 @@ const CatalogItem = ({id, name, audience, lightingPower, srcImg="https://i0.wp.c
             </div>
             <div className="catalogitem__button">
                 <button>
-                    <NavLink exact to="/item" className="nav-link">View more</NavLink>
+                    <NavLink exact to={url} className="nav-link">View more</NavLink>
                 </button>
             </div>
         </div>

@@ -1,12 +1,15 @@
 import React from "react";
 import "./styleItemPage.css";
+import SelectFilter from "../../items/SelectFilter/SelectFilter";
+
+const _options = [1, 2, 3, 4, 5, 6, 7];
 
 function ItemPage(item) {
     return(
         <section className="container">
             <div className="item__top">
                 <div className="item__top-img">
-                    <img className="item__top-img-2" />
+                    <img className="item__top-img-2" src={item.srcImg}/>
                 </div>
                 <div className="item__top-content">
                     <div className="item-content">
@@ -18,6 +21,10 @@ function ItemPage(item) {
                         <div className="content-info">
                             <div className="info">Audience: {item.audience} 20000</div>
                             <div className="info">Lighting Power: {item.lightingPower} 2000 lux</div>
+                        </div>
+                        <div className="content-filters"> 
+                            <SelectFilter title="Select" options={_options}/>
+                            <SelectFilter title="Test" options={_options}/>
                         </div>
                     </div>
                 </div>
