@@ -3,8 +3,14 @@ import { NavLink } from "react-router-dom";
 import "./catalogitemStyle.css"
 
 
-const CatalogItem = ({id, name, audience, lightingPower, srcImg}) => {
+const CatalogItem = ({searchNameForItem, id, name, audience, lightingPower, srcImg}) => {
     const url = `item/${id}`
+
+    if (searchNameForItem != '') {
+        if (!name.includes(searchNameForItem)) {
+            return null;
+        }
+    }
 
     return (
         <div className="catalogitem">
