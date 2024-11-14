@@ -15,13 +15,13 @@ function Navigation(){
                 <div className="container__navigation-logo"></div>
                 <ul className="container__navigation-nav-menu">
                     <li>
-                        <NavLink exact to="/" activeClassName="active" className="static">Home</NavLink>
+                        <NavLink to="/" activeclassname="active" className="static">Home</NavLink>
                     </li>
                     <li>
-                        <NavLink exact to="/catalog" activeClassName="active" className="static">Catalog</NavLink>
+                        <NavLink to="/catalog" activeclassname="active" className="static">Catalog</NavLink>
                     </li>
                     <li>
-                        <NavLink exact to="/card" activeClassName="active" className="static">Cards</NavLink>
+                        <NavLink to="/card" activeclassname="active" className="static">Cards</NavLink>
                     </li>
                 </ul>
                 <div className="container__navigation-end"></div>

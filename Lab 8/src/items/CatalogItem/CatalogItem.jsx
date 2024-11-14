@@ -42,7 +42,7 @@ const CatalogItem = ({id, name, audience, lightingPower, srcImg, price, searchNa
             </div>
             <div className="catalogitem__button">
                 <button>
-                    <NavLink exact to={url} className="nav-link">View more</NavLink>
+                    <NavLink to={url} className="nav-link">View more</NavLink>
                 </button>
             </div>
         </div>

@@ -5,7 +5,7 @@ import "./buttonviewStyle.css";
 const ButtonView = () => {
     return (
         <>
-            <NavLink exact to="/catalog">
+            <NavLink to="/catalog">
                 <div className="container__button">
                     <button>View more</button>
                 </div>

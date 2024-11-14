@@ -9,7 +9,7 @@ function CatalogList() {
     return (
         <div className="container__list">
             {items.map(item => (
-                <CatalogItem 
+                <CatalogItem key={item.id}
                     id={item.id}
                     name={item.name}
                     audience={item.audience}
