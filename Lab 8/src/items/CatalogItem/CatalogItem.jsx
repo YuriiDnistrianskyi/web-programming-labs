@@ -3,8 +3,32 @@ import { NavLink } from "react-router-dom";
 import "./catalogitemStyle.css"
 
 
-const CatalogItem = ({id, name, audience, lightingPower, srcImg}) => {
+const CatalogItem = ({id, name, audience, lightingPower, srcImg, price, searchName, filterMinPrice, filterMinAudience, filterMinLightingPower}) => {
     const url = `item/${id}`
+
+    if (searchName != '') {
+        if (!name.includes(searchName)) {
+            return;
+        }
+    }
+
+    if (filterMinPrice != '') {
+        if (filterMinPrice > price) {
+            return null;
+        }
+    }
+
+    if (filterMinAudience != '') {
+        if (filterMinAudience > audience) {
+            return null;
+        }
+    }
+
+    if (filterMinLightingPower != '') {
+        if (filterMinLightingPower > lightingPower) {
+            return null;
+        }
+    }
 
     return (
         <div className="catalogitem">
@@ -12,8 +36,9 @@ const CatalogItem = ({id, name, audience, lightingPower, srcImg}) => {
             <img className="catalogitem-img" src={srcImg}/>
             <div className="catalogitem__content">
                 <h2 className="catalogitem__content-name">{name}</h2>
-                <p><span className="span__font-weight">Audience:</span> {audience} </p>
-                <p><span className="span__font-weight">Lighting power:</span> {lightingPower} </p>
+                <p className="catalogitem-info"><span className="span__font-weight">Audience:</span> {audience} </p>
+                <p className="catalogitem-info"><span className="span__font-weight">Lighting power:</span> {lightingPower} lux</p>
+                <p className="catalogitem-info"><span className="span__font-weight">Price:</span> {price} $</p>
             </div>
             <div className="catalogitem__button">
                 <button>

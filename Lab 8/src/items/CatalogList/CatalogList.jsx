@@ -4,7 +4,7 @@ import "./cataloglistStyle.css";
 import { myContext } from "../Context/Context";
 
 function CatalogList() {
-    const { items } = useContext(myContext)
+    const { items, searchName, filterMinPrice, filterMinAudience, filterMinLightingPower } = useContext(myContext)
 
     return (
         <div className="container__list">
@@ -15,6 +15,11 @@ function CatalogList() {
                     audience={item.audience}
                     lightingPower={item.lightingPower}
                     srcImg={item.srcImg}
+                    price={item.price}
+                    searchName = {searchName}
+                    filterMinPrice={filterMinPrice}
+                    filterMinAudience={filterMinAudience}
+                    filterMinLightingPower={filterMinLightingPower}
                 ></CatalogItem>
             ))}
         </div>

@@ -1,11 +1,15 @@
 import React from "react";
 import "./selectStyle.css"
 
-const SelectFilter = ({title, options}) => {
+const SelectFilter = ({changeValue, title, options}) => {
+    const changeSelect = (event) => {
+        changeValue(event.target.value);
+    }
+
     return(
         <>
             <div className="container">
-                <select className="select">
+                <select onChange={changeSelect} className="select">
                     <option>{title}</option>
                     <option>{options[0]}</option>
                     <option>{options[1]}</option>

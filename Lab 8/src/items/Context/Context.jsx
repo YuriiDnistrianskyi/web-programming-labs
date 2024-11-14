@@ -3,6 +3,11 @@ import React, {createContext, useState} from "react";
 export const myContext = createContext();
 
 export const MyProvide = ({ children }) => {
+    const [searchName, setSearchName] = useState('');
+    const [filterMinPrice, setFilterMinPrice] = useState('');
+    const [filterMinAudience, setFilterMinAudience] = useState('');
+    const [filterMinLightingPower, setFilterMinLightingPower] = useState('');
+
     const [items, setItems] = useState([
         {
             id: "1", 
@@ -18,7 +23,7 @@ export const MyProvide = ({ children }) => {
             audience: "20000", 
             lightingPower: "2200", 
             srcImg: "https://pictures.ua.tribuna.com/image/3c61e832-6e81-466d-b540-85d56a5e31b7?width=1260&quality=70",
-            price: "15000"
+            price: "150000"
         },
         {
             id: "3", 
@@ -79,7 +84,7 @@ export const MyProvide = ({ children }) => {
     ]);
 
     return (
-        <myContext.Provider value={{items, setItems}}>
+        <myContext.Provider value={{items, setItems, searchName, setSearchName, filterMinPrice, setFilterMinPrice, filterMinAudience, setFilterMinAudience, filterMinLightingPower, setFilterMinLightingPower}}>
             {children}
         </myContext.Provider>
     );
