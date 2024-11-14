@@ -5,17 +5,11 @@ import CatalogList from "../../items/CatalogList/CatalogList";
 
 
 function Catalog() {
-    const [searchNameForList, setSearchName] = useState('')
-
-    const searchByNameHeader = (name) => {
-        setSearchName(name)
-    }
-
     return (
         <MyProvide>
             <div>
-                <CatalogHeader onSearch={searchByNameHeader}/>
-                <CatalogList searchName={searchNameForList}/>
+                <CatalogHeader />
+                <CatalogList />
             </div>
         </MyProvide>
     );

@@ -28,7 +28,12 @@
     height: 30%;
 }
 
+.catalogitem-info {
+    margin-top: -10px;
+}
+
 .span__font-weight {
+    margin-top: -40px;
     font-weight: bold;
 }
 
