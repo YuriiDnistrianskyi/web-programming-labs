@@ -30,7 +30,7 @@ function Navigation(){
                 <Route path="/" element={<Home />} />
                 <Route path="/catalog" element={<Catalog />} />
                 <Route path="/card" element={<Cart />} />
-                <Route path="/catalog/item/:id" element={<ItemPage item={item1}></ItemPage>} />
+                <Route path="/catalog/item/:id" element={<ItemPage />} />
             </Routes>
         </Router>
     );

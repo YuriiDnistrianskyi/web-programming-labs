@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
+import { useParams, NavLink } from "react-router-dom";
+import { myContext } from "../../items/Context/Context";
 import "./styleItemPage.css";
 import SelectFilter from "../../items/SelectFilter/SelectFilter";
 
 const _options = [1, 2, 3, 4, 5, 6, 7];
 
-function ItemPage(item) {
+function ItemPage() {
+    const { id } = useParams();
+    const { items } = useContext(myContext);
+
+    const item = items.find(i => i.id === id);
+
     return(
         <section className="container">
             <div className="item__top">
@@ -17,10 +24,10 @@ function ItemPage(item) {
                             <div>Option 1</div>
                             <div>Option 2</div>
                         </div>
-                        <h1 className="content-name">{item.name} Name</h1>
+                        <h1 className="content-name">{item.name}</h1>
                         <div className="content-info">
-                            <div className="info">Audience: {item.audience} 20000</div>
-                            <div className="info">Lighting Power: {item.lightingPower} 2000 lux</div>
+                            <div className="info">Audience: {item.audience}</div>
+                            <div className="info">Lighting Power: {item.lightingPower} lux</div>
                         </div>
                         <div className="content-filters"> 
                             <SelectFilter title="Select" options={_options}/>
@@ -30,9 +37,11 @@ function ItemPage(item) {
                 </div>
             </div>
             <div className="item__bottom">
-                <div className="item__bottom-price">Price: {item.price} 999$</div>
+                <div className="item__bottom-price">Price: {item.price} $</div>
                 <div className="item__bottom-buttons">
-                    <button className="button-item-page go-back">Go Back</button>
+                    <NavLink exact to="/catalog" className="item__navlink">
+                        <button className="button-item-page go-back">Go Back</button>
+                    </NavLink>
                     <button className="button-item-page add-to">Add to Card</button>
                 </div>
             </div>

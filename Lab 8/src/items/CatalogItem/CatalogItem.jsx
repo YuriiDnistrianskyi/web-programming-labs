@@ -2,10 +2,9 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "./catalogitemStyle.css"
 
-const a = ``
 
-const CatalogItem = ({id, name, audience, lightingPower, srcImg="https://i0.wp.com/photo-lviv.in.ua/wp-content/uploads/2019/02/arena.jpg?fit=1280%2C849&ssl=1"}) => {
-    const url = `item/${id}`;
+const CatalogItem = ({id, name, audience, lightingPower, srcImg}) => {
+    const url = `item/${id}`
 
     return (
         <div className="catalogitem">

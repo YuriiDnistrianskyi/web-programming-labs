@@ -2,15 +2,18 @@ import React from "react";
 import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
 import Navigation from "../Navigation/Navigation";
+import { MyProvide } from "../../items/Context/Context";
 import "./appStyle.css"
 
 
 function App() {
     return(
         <>
-            <Header />
-            <Navigation />
-            <Footer />
+            <MyProvide>
+                <Header />
+                <Navigation />
+                <Footer />
+            </MyProvide>
         </>
     )
 }
