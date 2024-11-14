@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useContext } from "react";
 import { myContext } from "../Context/Context"; 
 import "./styleCatalogHeader.css";

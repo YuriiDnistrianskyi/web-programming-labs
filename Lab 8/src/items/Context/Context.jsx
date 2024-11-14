@@ -8,7 +8,6 @@ export const MyProvide = ({ children }) => {
     const [filterMinAudience, setFilterMinAudience] = useState('');
     const [filterMinLightingPower, setFilterMinLightingPower] = useState('');
 
-
     const [items, setItems] = useState([
         {
             id: "1", 
