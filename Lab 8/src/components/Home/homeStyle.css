@@ -73,6 +73,22 @@
     height: 80%;
 }
 
+.test {
+    display: none;
+}
+
+.list-2 {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+    width: 80%;
+    height: 80%;
+
+    background-color: blue;
+}
+
 .container__list div {
     margin-top: 40px;
 }

@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { useParams, NavLink } from "react-router-dom";
-import { myContext } from "../../items/Context/Context";
+import { myContext } from "../../items/Contexts/Context";
 import "./styleItemPage.css";
 import SelectFilter from "../../items/SelectFilter/SelectFilter";
 

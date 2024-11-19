@@ -8,7 +8,7 @@ const CatalogItem = ({id, name, audience, lightingPower, srcImg, price, searchNa
 
     if (searchName != '') {
         if (!name.includes(searchName)) {
-            return;
+            return null;
         }
     }
 

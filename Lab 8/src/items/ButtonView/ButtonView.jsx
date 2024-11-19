@@ -2,14 +2,12 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "./buttonviewStyle.css";
 
-const ButtonView = () => {
+const ButtonView = ({ func }) => {
     return (
         <>
-            <NavLink to="/catalog">
-                <div className="container__button">
-                    <button>View more</button>
-                </div>
-            </NavLink>
+            <div className="container__button">
+                <button onClick={func}>View more</button>
+            </div>
         </>
     );
 };

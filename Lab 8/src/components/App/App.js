@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
 import Navigation from "../Navigation/Navigation";
-import { MyProvide } from "../../items/Context/Context";
+import { MyProvide } from "../../items/Contexts/Context";
 import "./appStyle.css"
 
 

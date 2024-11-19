@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import "./homeStyle.css";
+import { myContext } from "../../items/Contexts/Context";
 import ButtonView from "../../items/ButtonView/ButtonView"
 import BlockItem from "../../items/BlockItem/BlockItem";
 
 
 function Home() {
+    const { items } = useContext(myContext);
+    const [openNewBlockItems, setOpenNewBlockItems] = useState(false);
+
+
+    function changeOpenNewBlocksItems() {
+        setOpenNewBlockItems(true);
+    }
+
+
     return(
         <>
             <section className="container top">
@@ -20,17 +30,30 @@ function Home() {
             </section>
 
             <section className="container">
-                <form className="container__form">
+                <div className="container__form">
                     <div className="container__list">
-                        <BlockItem name="Arena Lviv" audience="15000" lightingPower="2000" srcImg="https://i0.wp.com/photo-lviv.in.ua/wp-content/uploads/2019/02/arena.jpg?fit=1280%2C849&ssl=1"></BlockItem>
-                        <BlockItem name="Donbas Arena" audience="20000" lightingPower="2200" srcImg="https://pictures.ua.tribuna.com/image/3c61e832-6e81-466d-b540-85d56a5e31b7?width=1260&quality=70"></BlockItem>
-                        <BlockItem name="NSK 'Olimpiyskiy'" audience="25000" lightingPower="2500" srcImg="https://vechirniy.kyiv.ua/uploads/2022/08/12/483.jpg"></BlockItem>
+                        {items.slice(0, 3).map(item => 
+                            <BlockItem name={item.name} audience={item.audience} lightingPower={item.lightingPower} srcImg={item.srcImg}></BlockItem>
+                        )}
                     </div>
+                    
+                    {!openNewBlockItems && <ButtonView func={changeOpenNewBlocksItems} />}
 
-                    <ButtonView></ButtonView>
-
-                </form>
+                </div>
             </section>
+
+            {openNewBlockItems ?
+                <section className="container">
+                    <div className="container__form">
+                        <div className="container__list">
+                            {items.slice(3, 6).map(item => 
+                                <BlockItem name={item.name} audience={item.audience} lightingPower={item.lightingPower} srcImg={item.srcImg}></BlockItem>
+                            )}
+                        </div>
+                    </div>
+                </section>
+            : null}
+
         </>
     );
 }

@@ -1,13 +1,13 @@
 import React, { useContext } from "react";
 import CatalogItem from "../CatalogItem/CatalogItem";
 import "./cataloglistStyle.css";
-import { myContext } from "../Context/Context";
+import { myContext } from "../Contexts/Context";
 
 function CatalogList() {
     const { items, searchName, filterMinPrice, filterMinAudience, filterMinLightingPower } = useContext(myContext)
 
     return (
-        <div className="container__list">
+        <div className="catalog__container-list">
             {items.map(item => (
                 <CatalogItem key={item.id}
                     id={item.id}

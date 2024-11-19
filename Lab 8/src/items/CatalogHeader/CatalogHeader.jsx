@@ -1,6 +1,6 @@
 import React from "react";
 import { useContext } from "react";
-import { myContext } from "../Context/Context"; 
+import { myContext } from "../Contexts/Context"; 
 import "./styleCatalogHeader.css";
 import SelectFilter from "../../items/SelectFilter/SelectFilter";
 
