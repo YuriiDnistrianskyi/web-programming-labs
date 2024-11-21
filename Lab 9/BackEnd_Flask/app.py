@@ -1,6 +1,6 @@
 from flask import Flask
 from routes import init_routes
-from database import db
+from database import db, migrate
 from flask_cors import CORS
 
 app = Flask(__name__)
@@ -10,6 +10,9 @@ CORS(app)
 app.config.from_object('config.Config')
 
 db.init_app(app)
+migrate.init_app(app, db)
+
+from models import Stadium
 
 init_routes(app)
 

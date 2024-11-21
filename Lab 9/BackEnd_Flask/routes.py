@@ -7,44 +7,42 @@ def init_routes(app):
 
     @app.route('/stadium', methods=['GET'])
     def get_stadiums():
+        filter_price = request.args.get('price')
+        filter_audience = request.args.get('audience')
+        filter_lighting_power = request.args.get('lightingPower')
+
         stadiums = Stadium.query.all()
-        json_stadiums = [stadium.to_string() for stadium in stadiums]
-        return jsonify({"stadiums": json_stadiums})
+
+        if filter_audience:
+            stadiums = [stadium for stadium in stadiums if stadium.audience >= int(filter_audience)]
+        
+        if filter_lighting_power:
+            stadiums = [stadium for stadium in stadiums if stadium.lighting_power >= int(filter_lighting_power)]
+
+        if filter_price:
+            stadiums = [stadium for stadium in stadiums if stadium.price >= int(filter_price)]
+
+        json_stadiums = [stadium._print() for stadium in stadiums]
+        return jsonify(json_stadiums)
 
 
     @app.route('/stadium', methods=['POST'])
     def post_stadium():
         data = request.get_json()
-        new_stadium = Stadium(name=data['name'], audience=data['audience'], lighting_power=data['lighting_power'])
+        new_stadium = Stadium(name=data['name'], audience=data['audience'], lighting_power=data['lighting_power'], srcImg=data['srcImg'], price=data['price'])
         db.session.add(new_stadium)
         db.session.commit()
         return {'message': 'Stadium added successfully.'}, 201
+    
+    
+    @app.route('/stadium/<int:del_id>', methods=['DELETE'])
+    def delete_stadium(del_id):
+        delete_obj = Stadium.query.filter_by(id=del_id).first()
 
-
-    @app.route('/stadium/<int:edit_id>', methods=['PUT'])
-    def put_stadium(edit_id):
-        data = request.get_json()
-        stadium = Stadium.query.get(edit_id)
-
-        if stadium:
-            stadium.name = data['name']
-            stadium.audience = data['audience']
-            stadium.lighting_power = data['lighting_power']
+        if delete_obj:
+            db.session.delete(delete_obj)
             db.session.commit()
-            return {'message': f"Stadium (id = {edit_id}) edited successfully."}, 201
+            return jsonify({"messange": "delete"})
+        return jsonify({"messange": "not"})
+    
 
-        else:
-            return {'message': f'Stadium id ({edit_id}) not found'}, 404
-
-
-    @app.route('/stadium/<int:delete_id>', methods=["DELETE"])
-    @cross_origin()
-    def delete_stadium(delete_id):
-        stadium = Stadium.query.filter_by(id=delete_id).first()
-
-        if stadium:
-            db.session.delete(stadium)
-            db.session.commit()
-            return {'messange': f'Stadium {delete_id} deleted successfully.'}, 201
-        else:
-            return {'messange': f'Stadium {delete_id} not found.'}, 404

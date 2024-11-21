@@ -10,7 +10,7 @@ function CatalogHeader() {
     const minAudienceList = [20000, 40000, 90000];
     const minLightingPowerList = [1500, 2000, 2500, 3000];
 
-    const { setSearchName, setFilterMinPrice, setFilterMinAudience, setFilterMinLightingPower } = useContext(myContext);
+    const { getItems, setSearchName } = useContext(myContext);
 
     let searchName = '';
     let minPriceValue = '';
@@ -35,9 +35,10 @@ function CatalogHeader() {
 
     const filterItems = () => {
         setSearchName(searchName);
-        setFilterMinPrice(minPriceValue);
-        setFilterMinAudience(minAudienceValue);
-        setFilterMinLightingPower(minLightingPowerValue);
+        getItems({'price': minPriceValue,
+                  'audience': minAudienceValue,
+                  'lightingPower': minLightingPowerValue
+        });
     }
 
     return (
