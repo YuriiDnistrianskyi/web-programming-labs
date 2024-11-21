@@ -21,16 +21,16 @@ function CatalogHeader() {
         searchName = event.target.value;
     }
 
-    const changeFilterMinPrice = (value) => {
-        minPriceValue = value;
-    }
-
     const changeFilterMinAudience = (value) => {
-        minAudienceValue = value
+        value == "Min audience" ? minAudienceValue = "" : minAudienceValue = value;
     }
 
     const changeFilterMinLightingPower = (value) => {
-        minLightingPowerValue = value
+        value == "Min lighting power" ? minLightingPowerValue = "" : minLightingPowerValue = value;
+    }
+
+    const changeFilterMinPrice = (value) => {
+        value == "Min price" ? minPriceValue = "" : minPriceValue = value;
     }
 
     const filterItems = () => {
@@ -45,9 +45,9 @@ function CatalogHeader() {
         <div className="container__catalog">
             <div className="container__top">
                 <div className="container__top-selects">
-                    <SelectFilter changeValue={changeFilterMinPrice} title="Min price" options={minPriceList} />
                     <SelectFilter changeValue={changeFilterMinAudience} title="Min audience" options={minAudienceList} />
                     <SelectFilter changeValue={changeFilterMinLightingPower} title="Min lighting power" options={minLightingPowerList} />
+                    <SelectFilter changeValue={changeFilterMinPrice} title="Min price" options={minPriceList} />
                 </div>
                 <div className="container__top-items">
                     <input className="item-search" onChange={changeSearchName} placeholder="Search" />

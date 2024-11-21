@@ -9,8 +9,10 @@ const _options = [1, 2, 3, 4, 5, 6, 7];
 function ItemPage() {
     const { id } = useParams();
     const { items } = useContext(myContext);
+    console.log(items);
 
     const item = items.find(i => i.id === id);
+    console.log(item);
 
     return(
         <section className="container">

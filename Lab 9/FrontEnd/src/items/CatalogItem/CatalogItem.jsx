@@ -3,29 +3,11 @@ import { NavLink } from "react-router-dom";
 import "./catalogitemStyle.css"
 
 
-const CatalogItem = ({id, name, audience, lightingPower, srcImg, price, searchName, filterMinPrice, filterMinAudience, filterMinLightingPower}) => {
+const CatalogItem = ({id, name, audience, lightingPower, srcImg, price, searchName}) => {
     const url = `item/${id}`
 
     if (searchName != '') {
         if (!name.includes(searchName)) {
-            return null;
-        }
-    }
-
-    if (filterMinPrice != '') {
-        if (filterMinPrice > price) {
-            return null;
-        }
-    }
-
-    if (filterMinAudience != '') {
-        if (filterMinAudience > audience) {
-            return null;
-        }
-    }
-
-    if (filterMinLightingPower != '') {
-        if (filterMinLightingPower > lightingPower) {
             return null;
         }
     }
