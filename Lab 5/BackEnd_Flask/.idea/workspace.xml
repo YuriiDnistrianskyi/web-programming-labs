@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0a6d43f4-ab24-4929-9204-d23af4f0baba" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Lab 9/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab 9/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab 9/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab 9/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab 9/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab 9/public/Logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab 9/public/LogoNavigation.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab 9/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab 9/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab 9/src/components/App/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab 9/src/components/App/Footer/Footer.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab 9/src/components/App/Footer/footerStyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab 9/src/components/App/Header/Header.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab 9/src/components/App/Header/headerStyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab 9/src/components/App/appStyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab 9/src/components/Cart/Cart.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab 9/src/components/Catalog/Catalog.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab 9/src/components/Home/Home.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab 9/src/components/Home/homeStyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab 9/src/components/ItemPage/ItemPage.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab 9/src/components/ItemPage/styleItemPage.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab 9/src/components/Navigation/Navigation.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab 9/src/components/Navigation/navigationStyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab 9/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab 9/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab 9/src/items/BlockItem/BlockItem.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab 9/src/items/BlockItem/styleBlockItem.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab 9/src/items/ButtonView/ButtonView.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab 9/src/items/ButtonView/buttonviewStyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab 9/src/items/CatalogHeader/CatalogHeader.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab 9/src/items/CatalogHeader/styleCatalogHeader.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab 9/src/items/CatalogItem/CatalogItem.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab 9/src/items/CatalogItem/catalogitemStyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab 9/src/items/CatalogList/CatalogList.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab 9/src/items/CatalogList/cataloglistStyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab 9/src/items/Contexts/Context.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab 9/src/items/SelectFilter/SelectFilter.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab 9/src/items/SelectFilter/selectStyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab 9/src/reportWebVitals.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="2pAAAj3OeYC9Y5QhdiBDR69vdNB" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/ichsp/OneDrive/Документи/Teaching/Semester 3/Web/lab 5/BackEnd_Flask",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="BackEnd_Flask" type="PythonConfigurationType" factoryName="Python">
+      <module name="BackEnd_Flask" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PY-242.23726.102" />
+        <option value="bundled-python-sdk-5e1850174b45-399fe30bd8c1-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.23726.102" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0a6d43f4-ab24-4929-9204-d23af4f0baba" name="Changes" comment="" />
+      <created>1732198369138</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1732198369138</updated>
+      <workItem from="1732198370517" duration="83000" />
+    </task>
+    <servers />
+  </component>
+</project>
