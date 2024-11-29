@@ -11,8 +11,9 @@ const ShopingItem = ({id, srcImg, name, price, count}) => {
     }
 
     const divCount = () => {
-        count = Math.max(1, count - 1);
+        dispatch({type: "REMOVE_COUNT", idItem: id});
     }
+
 
 
     return (

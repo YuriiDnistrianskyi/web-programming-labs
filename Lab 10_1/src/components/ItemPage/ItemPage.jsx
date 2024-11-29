@@ -46,7 +46,7 @@ function ItemPage() {
             <div className="item__bottom">
                 <div className="item__bottom-price">Price: {item.price} $</div>
                 <div className="item__bottom-buttons">
-                    <NavLink exact to="/catalog" className="item__navlink">
+                    <NavLink to="/catalog" className="item__navlink">
                         <button className="button-item-page go-back">Go Back</button>
                     </NavLink>
                     <button className="button-item-page add-to" onClick={addCart}>Add to Card</button>

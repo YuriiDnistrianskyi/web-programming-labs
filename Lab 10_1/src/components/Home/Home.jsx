@@ -33,7 +33,7 @@ function Home() {
                 <div className="container__form">
                     <div className="container__list">
                         {items.slice(0, 3).map(item => 
-                            <BlockItem name={item.name} audience={item.audience} lightingPower={item.lightingPower} srcImg={item.srcImg}></BlockItem>
+                            <BlockItem key={item.id} name={item.name} audience={item.audience} lightingPower={item.lightingPower} srcImg={item.srcImg}></BlockItem>
                         )}
                     </div>
                     
