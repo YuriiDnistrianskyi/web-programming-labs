@@ -1,0 +1,150 @@
+.item__top {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 80%;
+    height: 70%;
+    background-color: #ffffff;
+}
+
+.item__top-img {
+    width: 50%;
+    height: 100%;
+}
+
+.item__top-img-2 {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.item__top-content {
+    width: 60%;
+    height: 100%;
+}
+
+.item-content{
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 80%;
+    height: 80%;
+}
+
+.content-header {
+    display: flex;
+    width: 100%;
+    height: 10%;
+}
+
+.content-header div {
+    margin-top: 3px;
+    margin-left: 10px;
+    width: 20%;
+    height: 80%;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(42, 210, 132);
+}
+
+.content-name {
+    margin: 0 auto;
+    width: 40%;
+    height: 10%;
+    text-align: center;
+}
+
+.content-info {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 80%;
+    height: 35%;
+}
+
+.info {
+    margin: 0 auto;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.content-filters {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 80%;
+    height: 15%;
+}
+
+.item__bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 80%;
+    height: 10%;
+    background-color: #ffffff;
+}
+
+.item__bottom-price {
+    width: 25%;
+    height: 100%;
+    text-align: center;
+
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.item__bottom-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 12px;
+    width: 40%;
+    height: 100%;
+}
+
+.item__navlink {
+    text-decoration: none;
+    width: 45%;
+    height: 80%;
+}
+
+.button-item-page {
+    width: 45%;
+    height: 80%;
+    border-width: 0;
+    border-radius: 30px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    transition: linear 0.3s;
+}
+
+.go-back {
+    margin-top: -2px;
+    width: 100%;
+    height: 100%;
+    border-width: 1px;
+    background-color: #ffffff;
+}
+
+.add-to {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.button-item-page:hover {
+    transform: scale(1.1);
+}
+
+.button-item-page:active {
+    transform: scale(0.9);
+}
+
