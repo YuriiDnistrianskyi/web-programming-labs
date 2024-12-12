@@ -1,10 +1,12 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { Formik, Form, Field, ErrorMessage } from "formik";
+import { useDispatch } from "react-redux";
 import * as Yup from "yup";
 import "./styleOrder.css"
 
 function Order() {
+
     const validationSchema = Yup.object().shape({
         firstName: Yup.string().required("First Name is required"),
         lastName: Yup.string().required("Last Name is required"),
@@ -13,8 +15,12 @@ function Order() {
         address: Yup.string().required("Address is required")
     });
 
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
+
     const controllerSubmit = () => {
-        alert("Ok");
+        dispatch({type: "REMOVE"});
+        navigate("/success");
     }
 
     return (

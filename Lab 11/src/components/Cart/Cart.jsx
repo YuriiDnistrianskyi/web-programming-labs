@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import ShopingItem from "../../items/ShopingItem/ShopingItem"
-import { useDispatch, useSelector } from "react-redux";
+import {useSelector } from "react-redux";
 import "./styleCart.css";
 
 function Cart() {
 
     const [totalPrice, setTotalPrice] = useState(0);
 
-    const dispatch = useDispatch();
     const items = useSelector((state) => state.shoping.items);
 
     const changePrice = () => {
